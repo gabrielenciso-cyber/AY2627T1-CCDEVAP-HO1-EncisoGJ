@@ -5,11 +5,20 @@
     </head>
     <body>
 
-        <div>
+        <header>
             <h1>Page Dedicated to Me, Myself, and I</h1>
-        </div>
+        </header>
 
-        <div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#sports">Sports</a>
+            <a href="#music">Music</a>
+            <a href="#adventures">Adventures</a>
+            <a href="#gaming">Gaming</a>
+            <a href="#forms">About You</a>
+        </nav>
+
+        <section>
             <h1>About Me!</h1>
             <p>
                 <img src="media/MyPhoto.jpg" alt="Profile" style="width: 200px; height: auto"> <br>
@@ -25,9 +34,9 @@
                 Instagram: <a href="https://www.instagram.com/gabenciso_/"> gabenciso_</a><br>
 
             </p>
-        </div>
+        </section>
 <hr>
-        <div>
+        <section id="sports">
             <h2>Keeping Active</h2>
             <p>
                 I am part of the DLSU Fencing Mens Team that represents the school in The UAAP. 
@@ -35,6 +44,7 @@
                 Last Season 88 my teammate secured Gold for the individual event, and we got Silver 
                 for the Team Event. It was my most heartbreaking season, because of the injury I suffered 
                 whilst fighting for Silver making me unable to fight for Gold in the final event. <br><br>
+                <video src="media/Fencing.mp4" Controls></video>
                 <img src="media/FencingTeam.jpg" alt="Team" style="width: 240px; height: auto;">
                 <img src="media/FencingSolo.jpg" alt="Solo" style="width: 240px; height: auto;">
                 <img src="media/FencingInjury.jpg" alt="Injury" style="width: 200px; height: auto;"> <br>
@@ -52,27 +62,35 @@
                 Swimming<br>
                 <b>Fun Fact</b>: I hate running 
             </p>
-        </div>
+        </section>
 <hr>
-        <div>
+        <section id="music">
             <h2>Music</h2>
             <p>
                 <h3>Fave Artists</h3>
-                <img src="media/CupOfJoe.png" alt="CupOfJoe" style="width: 140px; height: auto;">
-                <img src="media/Hozier.jpg" alt="Hozier" style="width: 145px; height: auto;">
+                Cup of Joe<br>
+                <img src="media/CupOfJoe.png" alt="CupOfJoe" style="width: 140px; height: auto;"><br>
+                Hozier<br>
+                <img src="media/Hozier.jpg" alt="Hozier" style="width: 145px; height: auto;"><br>
+                Lana Del Rey<br>
                 <img src="media/LanaDelRey.jpg" alt="LanaDelRey" style="width: 140px; height: auto;">
                 <h3>Fave Songs</h3>
-                <img src="media/Pahina.png" alt="Pahina" style="width: 140px; height: auto;">
+                <div>
+                <img src="media/Pahina.png" alt="Pahina" style="width: 140px; height: auto;"><br>
+                <p>Pahina Audio</p><br>
+                <audio src="media/PahinaAudio.mp3" controls></audio>
+                </div>
+                <br><br>
+                <p>Honorable Mentions</p>
                 <img src="media/Mananatili.png" alt="Mananatili" style="width: 140px; height: auto;">
                 <img src="media/FromEden.png" alt="FromEden" style="width: 140px; height: auto;">
                 <img src="media/VideoGames.png" alt="VideoGames" style="width: 140px; height: auto;">
                 <img src="media/IWBY.png" alt="IWBY" style="width: 140px; height: auto;">
             </p>
-        </div>
+        </section>
 <hr>
-        <div>
+        <section id="adventures">
             <h2>Adventures</h2>
-            <p>
                 <h3>Philippines</h3>
                 <ol>
                     <li>Cebu City</li>
@@ -88,7 +106,7 @@
                     <li>Legazpi City</li>
                     <li>Naga City</li>
                     <li>Antipolo City</li>
-            </ol>
+                </ol>
                 <h3>International</h3>
                 <ol>
                     <li>Hong Kong</li>
@@ -99,10 +117,9 @@
                     <li>Macau</li>
                     <li>Vietnam</li>
                 </ol>
-            </p>
-        </div>
+        </section>
 <hr>
-        <div>
+        <section id="gaming">
             <h2>Gaming</h2>
             <p>
                 <table>
@@ -157,11 +174,41 @@
                     </tr>
                 </table>
             </p>
-        </div>
+        </section>
 <hr>
-        <div>
-            <p><a href="index.html">Back to Home</a></p>
-        </div>
+        <section id="forms">
+            <h2>How about you?</h2>
+            <h3>Tell Me About Yourself!</h3>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br>
+                <label for="game">Favorite Game:</label>
+                <input type="text" id="game" name="game"><br>
+
+            <p>Do you play sports?</p>
+                <input type="radio" id="yes" name="sports" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="sports" value="no">
+                <label for="no">No</label><br>
+
+            <p>What are you interested in?</p>
+                <input type="checkbox" id="gaming" name="interest" value="Gaming">
+                <label for="gaming">Gaming</label>
+                <input type="checkbox" id="music" name="interest" value="Music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="travel" name="interest" value="Travel">
+                <label for="travel">Travel</label><br>
+
+                <input type="submit" value="Submit">
+            </form>
+    </section>
+<hr>
+    <footer>
+        <a href="index.html">Back to Home</a>
+    </footer>
 <hr>
     </body>
 </html>
