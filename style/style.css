@@ -1,0 +1,376 @@
+/* Template from previous works */
+
+:root {
+    --bg: #070b1e;
+    --panel: #0b0d22;
+    --cyan: #65fbff;
+    --blue: #4c94ff;
+    --green: #00ffc8;
+    --purple: #e0abf2;
+    --text: #ffffff;
+    --muted: #b8d6e8;
+    --border: rgba(101, 251, 255, 0.28);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background:
+        linear-gradient(rgba(101, 251, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(101, 251, 255, 0.025) 1px, transparent 1px), var(--bg);
+    background-size: 40px 40px;
+    color: var(--text);
+    font-family: "Space Mono", monospace;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+h1,h2,h3,h4 {
+    font-family: "Tomorrow", sans-serif;
+}
+
+h1 {
+    color: var(--cyan);
+    text-shadow:
+        0 0 6px rgba(101, 251, 255, 0.7),
+        0 0 18px rgba(101, 251, 255, 0.2);
+}
+
+h2 {
+    color: var(--cyan);
+}
+
+h3 {
+    color: var(--purple);
+}
+
+p {
+    color: var(--muted);
+}
+
+a {
+    font-family: "Geist Mono", monospace;
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--green);
+    text-shadow: 0 0 8px rgba(0, 255, 200, 0.8);
+}
+
+.index-page > div {
+    width: min(850px, 85%);
+    margin: 50px auto;
+    padding: 35px;
+    background:
+        linear-gradient(135deg, rgba(101, 251, 255, 0.05), transparent 30%), var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow:
+        0 0 24px rgba(101, 251, 255, 0.08),
+        inset 0 0 40px rgba(21, 103, 146, 0.08);
+}
+
+.index-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(101, 251, 255, 0.2);
+    text-shadow: 0 0 7px rgba(101, 251, 255, 0.5);
+}
+
+.index-page h3 {
+    font-size: 1.4rem;
+}
+
+.index-page p {
+    font-size: 1rem;
+}
+
+.index-page p a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 9px 16px;
+    color: white;
+    border:1px solid rgba(101, 251, 255, 0.7);
+    background:
+        linear-gradient(180deg, rgba(101, 251, 255, 0.16), rgba(76, 148, 255, 0.14));
+    box-shadow: 0 0 12px rgba(101, 251, 255, 0.12);
+}
+
+.index-page p a:hover {
+    color: white;
+    border-color: var(--green);
+    background:
+        linear-gradient(180deg, rgba(0, 255, 200, 0.2), rgba(101, 251, 255, 0.16));
+    box-shadow: 0 0 18px rgba(0, 255, 200, 0.2);
+}
+
+.about-page header {
+    padding: 45px 20px;
+    text-align: center;
+    background:
+        linear-gradient(135deg, rgba(101, 251, 255, 0.08), transparent 35%),
+        linear-gradient(315deg, rgba(224, 171, 242, 0.08), transparent 35%), var(--panel);
+    border-bottom: 1px solid rgba(101, 251, 255, 0.25);
+}
+
+.about-page header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background: rgba(7, 11, 30, 0.95);
+    border-bottom: 1px solid rgba(101, 251, 255, 0.2);
+}
+
+nav a {
+    padding: 7px 12px;
+    color: var(--cyan);
+    border: 1px solid transparent;
+}
+
+
+nav a:hover {
+    color: var(--green);
+    border: 1px solid rgba(0, 255, 200, 0.5);
+    background: rgba(0, 255, 200, 0.05);
+}
+
+.about-page section {
+    width: min(1000px, 85%);
+    margin: 35px auto;
+    padding: 30px;
+    background:
+        linear-gradient(135deg, rgba(101, 251, 255, 0.035), transparent 30%), var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow:
+        0 0 24px rgba(101, 251, 255, 0.08),
+        inset 0 0 40px rgba(21, 103, 146, 0.08);
+}
+
+.about-page section:hover {
+    border-color: rgba(101, 251, 255, 0.5);
+    box-shadow:
+        0 0 28px rgba(101, 251, 255, 0.12),
+        inset 0 0 40px rgba(21, 103, 146, 0.1);
+}
+
+.about-page section h1,
+.about-page section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(101, 251, 255, 0.2);
+    text-shadow: 0 0 6px rgba(70, 143, 150, 0.8);
+}
+
+hr {
+    width: 80%;
+    border: none;
+    border-top: 1px solid rgba(101, 251, 255, 0.2);
+    margin: 30px auto;
+}
+
+img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 8px;
+    border: 1px solid rgba(101, 251, 255, 0.25);
+    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(101, 251, 255, 0.08);
+}
+
+img:hover {
+    transform: translateY(-3px);
+    border-color: var(--cyan);
+    box-shadow: 0 0 18px rgba(101, 251, 255, 0.25);
+}
+
+.about-page section:first-of-type img {
+    width: 220px;
+    border-radius: 50%;
+    border: 2px solid var(--cyan);
+    box-shadow: 0 0 18px rgba(101, 251, 255, 0.3);
+}
+
+video {
+    display: block;
+    width: 225px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 1px solid rgba(101, 251, 255, 0.35);
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(101, 251, 255, 0.12);
+}
+
+audio {
+    display: block;
+    max-width: 100%;
+    margin: 15px 0 25px;
+}
+
+ul, ol {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li::marker {
+    color: var(--cyan);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgba(1, 5, 18, 0.4);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid rgba(101, 251, 255, 0.2);
+    text-align: left;
+}
+
+th {
+    font-family: "Tomorrow", sans-serif;
+    color: var(--cyan);
+    background: rgba(101, 251, 255, 0.1);
+}
+
+td {
+    color: var(--muted);
+}
+
+tr:hover {
+    background: rgba(101, 251, 255, 0.06);
+}
+
+form {
+    padding: 20px;
+    border: 1px solid rgba(101, 251, 255, 0.18);
+    background: rgba(1, 5, 18, 0.35);
+}
+
+label {
+    color: var(--muted);
+}
+
+input[type="text"], input[type="date"] {
+    padding: 9px 12px;
+    margin: 7px;
+    font-family: "Space Mono", monospace;
+    color: white;
+    background: #070b1e;
+    border: 1px solid rgba(101, 251, 255, 0.35);
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 10px rgba(0, 255, 200, 0.18);
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: var(--cyan);
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: "Geist Mono", monospace;
+    color: white;
+    cursor: pointer;
+    border: 1px solid var(--cyan);
+    background:
+        linear-gradient(180deg, rgba(101, 251, 255, 0.18), rgba(76, 148, 255, 0.18));
+    box-shadow: 0 0 14px rgba(101, 251, 255, 0.14);
+}
+
+input[type="submit"]:hover {
+    border-color: var(--green);
+    background:
+        linear-gradient(180deg, rgba(0, 255, 200, 0.22), rgba(101, 251, 255, 0.16));
+    box-shadow: 0 0 18px rgba(0, 255, 200, 0.22);
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    color: var(--muted);
+    background: #050818;
+    border-top: 1px solid rgba(101, 251, 255, 0.2);
+}
+
+footer a {
+    padding: 8px 15px;
+    border: 1px solid rgba(101, 251, 255, 0.35);
+}
+
+@media (max-width: 700px) {
+    .index-page > div,
+    .about-page section {
+        width: 92%;
+        padding: 20px;
+    }
+
+    .about-page header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        position: static;
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    img {
+        width: 45%;
+        margin: 5px;
+    }
+
+    .about-page section:first-of-type img {
+        width: 180px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
